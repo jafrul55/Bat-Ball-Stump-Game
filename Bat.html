@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: burlywood;
+      }
+      #Game-Name {
+        font-size: 100px;
+        font-family: "Gill Sans", "Gill Sans MT";
+      }
+      #Bat-Button {
+        font-size: 30px;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+      }
+      #Bat-Button:hover {
+        background-color: aqua;
+      }
+      #Ball-Button {
+        font-size: 30px;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+      }
+      #Ball-Button:hover {
+        background-color: yellow;
+      }
+      #Stump-Button {
+        font-size: 30px;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+      }
+      #Stump-Button:hover {
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="Game-Name">Bat Ball Stump Game</h1>
+    <button
+      id="Bat-Button"
+      onclick="
+      console.log('You have chosen Bat');
+      let you1  = 'You have chosen Bat';
+      //This will generate random number between 0 to 3
+      let randomNum = Math.random() * 3;
+      let computerChoice;
+      if (randomNum > 0 && randomNum <= 1)
+      {
+        computerChoice = 'Bat';
+        //console.log('Computer Choice is Bat');
+      }
+      else if(randomNum > 1 && randomNum <= 2){
+        computerChoice = 'Ball';
+        //console.log('Computer Choice is Ball');
+      }
+      else{
+        computerChoice = 'Stump';
+        //console.log('computer choice is Stump');
+      }
+
+      let bat_1;
+      if(computerChoice === 'Bat'){
+        console.log(`It's a Tie`);
+        bat_1 = `It's a Tie`;
+
+      }
+      else if( computerChoice === 'Ball')
+      {
+        console.log(`You have win`);
+        bat_1 = `You have win`;
+
+      }
+      else{
+        console.log('Computer has won');
+        bat_1 = 'Computer has won';
+      }
+
+      console.log(`Computer have chosen ${computerChoice}`);
+
+      alert(`
+          ${you1} 
+          Computer have chosen ${computerChoice}
+          Result:  ${bat_1}
+          `)
+      
+  "
+    >
+      Bat
+    </button>
+    <button
+      id="Ball-Button"
+      onclick="
+      console.log('You have chosen Ball');
+      let you2  = 'You have chosen Ball';
+      //This will generate random number between 0 to 3
+      let randomNum2 = Math.random() * 3;
+      let computerChoice2;
+      if (randomNum2 > 0 && randomNum2 <= 1)
+      {
+        computerChoice2 = 'Bat';
+        //console.log('Computer Choice is Bat');
+      }
+      else if(randomNum2 > 1 && randomNum2 <= 2){
+        computerChoice2 = 'Ball';
+        //console.log('Computer Choice is Ball');
+      }
+      else{
+        computerChoice2 = 'Stump'
+        //console.log('computer choice is Stump');
+      }
+
+      let bat_2;
+
+      if(computerChoice2 === 'Bat'){
+        //console.log('User Won')
+        bat_2 = 'Computer has won';
+
+      }
+      else if( computerChoice2 === 'Ball')
+      {
+        console.log(`It's a Tie`);
+        bat_2 = `It's a Tie`;
+
+      }
+      else{
+        //console.log('Computer has won');
+        bat_2 = 'You have win';
+      }
+
+      console.log(`Computer have chosen ${computerChoice2}`);
+
+      alert(`
+          ${you2} 
+          Computer have chosen ${computerChoice2}
+          Result:  ${bat_2}
+          `)
+    
+    "
+    >
+      Ball
+    </button>
+    <button
+      id="Stump-Button"
+      onclick="
+      console.log('You have chosen Stump');
+      let you3  = 'You have chosen Stump';
+      //This will generate random number between 0 to 3
+      let randomNum3 = Math.random() * 3;
+      let computerChoice3;
+      if (randomNum3 > 0 && randomNum3 <= 1)
+      {
+        computerChoice3 = 'Bat';
+        //console.log('Computer Choice is Bat');
+      }
+      else if(randomNum3 > 1 && randomNum3 <= 2){
+        computerChoice3 = 'Ball';
+        //console.log('Computer Choice is Ball');
+      }
+      else{
+        computerChoice3 = 'Stump';
+        //console.log('computer choice is Stump');
+      }
+
+      let bat_3;
+      if(computerChoice3 === 'Bat'){
+        console.log('You have Win');
+        bat_3 = 'You have Win';
+
+      }
+      else if( computerChoice3 === 'Ball')
+      {
+        console.log(`Computer has won`);
+        bat_3 = `Computer has won`;
+
+      }
+      else{
+        bat_3 = `It's a Tie`;
+      }
+
+      console.log(`Computer have chosen ${computerChoice3}`);
+
+      alert(`
+          ${you3} 
+          Computer have chosen ${computerChoice3}
+          Result:  ${bat_3}`)
+  
+  "
+    >
+      Stump
+    </button>
+  </body>
+</html>
